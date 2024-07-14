@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-API</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5c88c6c89c.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section class="header">
+        <div class="container p-5 d-flex justify-content-between ">
+            <a href="#" class="ps-5 ms-5 text-decoration-none d-flex">
+                <img src="media/logo@2x.png" width="64px" height="38px" alt="logo">
+                <div class="logo-cap">
+                    <h1 class="text-white fs-6 fw-bold ms-3 mb-0">Weather</h1>
+                    <small class="ms-3">tagline goes here</small>
+                </div>
+            </a>
+
+            <div class="navigation-menu align-content-center me-5">
+                <ul class="nav float-end me-2">
+                    <li class="nav-item ">
+                        <a href="#"  class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Live cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </section>
+    <!----- End navbar ------>
+
+    <div class="main position-relative">
+        <div class="container rounded-5">
+
+            <form class="find-location position-relative">
+                <input type="text" calss placeholder="&#xF002; Find Your Location..." style="font-family:Arial, FontAwesome"
+                    id="Search">
+                <input type="button" value="Find" id="Submit">
+            </form>
+
+        </div>
+    </div>
+
+    <div class="forecast-table">
+
+        <div class="container">
+
+            <div class="row py-4" id="forecast">
+
+                <div class="col-md-4 shadow px-0">
+
+                    <div class="forecast-header d-flex justify-content-between py-2 px-2 ">
+                        <div class="day" id="day">Saturday</div>
+                        <div class="date" id="date">30March</div>
+                    </div>
+
+                    <div class="forecast-content px-3 py-4 ">
+                        <div class="location fs-5" id="country">Cairo</div>
+
+                        <div class="degree d-flex ">
+                            <div class="num" id="temp">
+                                28
+                            </div>
+                            <div class="forecast-icon ps-5 pt-4 ms-4">
+                                <img id="icon" width="90">
+                            </div>
+                        </div>
+
+                        <div class="custom" id="statu">Sunny</div>
+
+                        <span class="me-3" id="rain">20%</span>
+                        <span class="me-3" id="wind">18km/h</span>
+                        <span class="me-3" id="windDirection">East</span>
+
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 shadow px-0 content2">
+
+                    <div class="forecast-header text-center py-2 header2">
+                        <div class="day2">Sunday</div>
+                    </div>
+
+                    <div class="forecast-icon px-3 py-4 text-center  ">
+                        <img class="icon2" width="48">
+                    </div>
+                    <div class="degree text-center">
+                        <p class="fs-4 fw-bold text-white mb-0 temp2">32.6<sup>o</sup>C</p>
+                        <small class="fs-6 smallTemp">
+                            19.7<sup>o</sup>
+                        </small>
+                    </div>
+
+                    <div class="custom text-center pt-5">Sunny</div>
+                </div>
+
+
+                <div class="col-md-4 shadow px-0 content3 ">
+
+                    <div class="forecast-header text-center py-2 header3">
+                        <div class="day2">Monday</div>
+                    </div>
+
+                    <div class="forecast-icon px-3 py-4 text-center  ">
+                        <img class="icon2" width="48">
+                    </div>
+                    <div class="degree text-center">
+                        <p class="fs-4 fw-bold text-white mb-0 temp2">32.6<sup>o</sup>C</p>
+                        <small class="fs-6 smallTemp">
+                            19.7<sup>o</sup>
+                        </small>
+                    </div>
+
+                    <div class="custom text-center pt-5">Sunny</div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <section class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <form class="subscribe-form">
+                        <input type="text" placeholder="Enter your email to Subscribe...">
+                        <input type="submit" value="Subscribe">
+
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <div class="social-links py-2">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="ps-4">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
